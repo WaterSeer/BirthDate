@@ -1,0 +1,18 @@
+{
+    "name": "kargin/dates",
+    "description": "Find das\bte number t\bfrom birthday",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MikeKargin",
+            "email": "redmoonsaber@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "Kargin\\":"src"
+        }
+    }
+}

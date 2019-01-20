@@ -2,15 +2,12 @@
 #!/usr/bin/env php
 <?php
 
-echo "hello";
+include "src/Dates/BirthDays.php";
 
-$birthDate="1986-02-05";
-$todayDate= date("Y-m-d");
+$birthDate="1978-09-22";
+$days=new \Kargin\Dates\BirthDays($birthdayDate)
 
-$birthTime=strtotime($birthDate);
-$todayTime-strtotime($todayDate);
+$totalDays=$days->findTotalDays();
 
-$totalSecs=$todayTime-$birthTime;
-$totalDays=floor($totalSecs/3600/24);
 
 echo "$birthDate:$totalDays\n";
